@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/payment_details">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/colorBlackTransparent"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:layout_marginTop="80dp"/>
+
+</RelativeLayout>

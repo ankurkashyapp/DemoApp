@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/payment_main">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="144dp">
+
+        <FrameLayout
+            android:id="@+id/scanner_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <!---->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/flash_off" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/gallery_icon" />
+        </LinearLayout>-->
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:src="@drawable/or_icon_circle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="123dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="215dp"
+        android:text="Point at Paytm QR Code to Pay"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="27dp"
+        android:text="Pay using Paytm OTP"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/cyan"
+        android:textStyle="bold" />
+
+</RelativeLayout>
