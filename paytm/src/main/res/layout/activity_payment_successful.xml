@@ -7,20 +7,52 @@
     tools:context="paytm.ankur.com.paytm.PaymentSuccessful"
     android:background="@drawable/payment_success_bg">
 
-    <!--<pl.droidsonroids.gif.GifImageView
-        android:layout_width="55dp"
-        android:layout_height="55dp"
-        android:src="@drawable/payment_successful"
-        android:layout_centerHorizontal="true"
-        android:scaleType="centerInside"
-        android:layout_marginTop="80dp"/>-->
-
     <ImageView
         android:id="@+id/success_anim"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
         android:layout_centerHorizontal="true"
-        android:scaleType="centerInside"
-        android:layout_marginTop="80dp"/>
+        android:layout_marginTop="80dp"
+        android:scaleType="center" />
+
+    <TextView
+        android:id="@+id/amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="132dp"
+        android:layout_marginLeft="165dp"
+        android:text="116"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/mobile_customer_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="217dp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/mobile_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:textColor="@color/colorGrey"
+        android:layout_marginTop="246dp"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/date_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="@color/colorGrey"
+        android:layout_marginTop="300dp"
+        android:layout_centerHorizontal="true"/>
 
 </RelativeLayout>

@@ -1,6 +1,7 @@
 package paytm.ankur.com.paytm;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -19,8 +20,6 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-
-
         paytmMain = (ImageView)findViewById(R.id.paytm_main_image);
         paytmMain.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -28,6 +27,23 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, PaymentActivity.class));
             }
         });
+        storeData();
+    }
+
+    private void storeData() {
+        SharedPreferences pref = getApplicationContext().getSharedPreferences("CustomerData", 0);
+        SharedPreferences.Editor editor = pref.edit();
+        editor.putString("9730617621", "Mukesh Choudhary");
+        editor.putString("9586922166", "Ramani Payal");
+        editor.putString("7218035367", "Hari Thapa");
+        editor.putString("8237409775", "sirvi fresh mart mart");
+        editor.putString("8378986198", "Food Ginie");
+        editor.putString("8623945998", "Mithai Magic");
+        editor.putString("8888611555", "Ghar Ka Khana");
+        editor.putString("8149121841", "Thali Gujarati");
+        editor.putString("9225513099", "Manpasand Dabeli");
+        editor.putString("9225513099", "Manpasand Dabeli");
+        editor.commit();
     }
 
     @Override

@@ -7,26 +7,6 @@
     tools:context="paytm.ankur.com.paytm.PaymentDetailsActivity"
     android:background="@drawable/payment_details">
 
-    <View
-        android:id="@+id/mobile_enabled"
-        android:layout_width="match_parent"
-        android:layout_height="2dp"
-        android:layout_marginLeft="45dp"
-        android:layout_marginRight="24dp"
-        android:background="@color/cyan1"
-        android:layout_marginTop="112dp"
-        android:visibility="gone"/>
-
-    <View
-        android:id="@+id/mobile_disabled"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_marginLeft="45dp"
-        android:layout_marginRight="24dp"
-        android:background="@color/colorGrey"
-        android:layout_marginTop="112dp"
-        android:visibility="gone"/>
-
     <EditText
         android:id="@+id/enter_mobile"
         android:layout_width="match_parent"
@@ -34,7 +14,19 @@
         android:layout_marginLeft="45dp"
         android:layout_marginRight="24dp"
         android:layout_marginTop="76dp"
-        android:textColor="@android:color/black" />
+        android:textColor="@color/colorGrey" />
+
+    <TextView
+        android:id="@+id/desc_mobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/enter_mobile"
+        android:text="Mobile Number"
+        android:textColor="@color/colorGrey"
+        android:textSize="13sp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="60dp"
+        android:visibility="gone"/>
 
     <EditText
         android:id="@+id/enter_amount"
@@ -45,6 +37,7 @@
         android:layout_marginTop="167dp"
         android:textColor="@color/colorGrey"
         android:text="Enter Amount" />
+
     <TextView
         android:id="@+id/desc_amount"
         android:layout_width="wrap_content"
@@ -57,8 +50,6 @@
         android:layout_marginLeft="3dp"
         android:layout_marginTop="32dp"
         android:visibility="gone"/>
-
-
 
     <EditText
         android:id="@+id/enter_description"
@@ -82,5 +73,37 @@
         android:layout_marginLeft="3dp"
         android:layout_marginTop="32dp"
         android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/submit_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/enter_description"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:padding="21dp"
+        android:text="Proceed"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:background="@drawable/selector_blue_button"/>
+
+    <View
+        android:id="@+id/mask_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/whiteTransparent"
+        android:visibility="gone" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone"/>
+
+
 
 </RelativeLayout>
