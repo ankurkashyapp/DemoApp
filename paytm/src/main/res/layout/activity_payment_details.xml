@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="paytm.ankur.com.paytm.PaymentDetailsActivity"
+    android:background="@drawable/payment_details">
+
+    <View
+        android:id="@+id/mobile_enabled"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="24dp"
+        android:background="@color/cyan1"
+        android:layout_marginTop="112dp"
+        android:visibility="gone"/>
+
+    <View
+        android:id="@+id/mobile_disabled"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="24dp"
+        android:background="@color/colorGrey"
+        android:layout_marginTop="112dp"
+        android:visibility="gone"/>
+
+    <EditText
+        android:id="@+id/enter_mobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="76dp"
+        android:textColor="@android:color/black" />
+
+    <EditText
+        android:id="@+id/enter_amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="167dp"
+        android:textColor="@color/colorGrey"
+        android:text="Enter Amount" />
+    <TextView
+        android:id="@+id/desc_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/enter_amount"
+        android:layout_below="@id/enter_mobile"
+        android:text="Enter Amount"
+        android:textColor="@color/colorGrey"
+        android:textSize="13sp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="32dp"
+        android:visibility="gone"/>
+
+
+
+    <EditText
+        android:id="@+id/enter_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="262dp"
+        android:textColor="@color/colorGrey"
+        android:text="Optional Description"/>
+
+    <TextView
+        android:id="@+id/desc_optional"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/enter_description"
+        android:layout_below="@id/enter_amount"
+        android:text="Optional Description"
+        android:textColor="@color/colorGrey"
+        android:textSize="13sp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="32dp"
+        android:visibility="gone"/>
+
+</RelativeLayout>
